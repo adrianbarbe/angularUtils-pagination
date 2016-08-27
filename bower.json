@@ -5,7 +5,7 @@
   "authors": [
     "Michael Bromley <michael@michaelbromley.co.uk>"
   ],
-  "description": "Magical automatic pagination for anything in AngularJS",
+  "description": "Magical automatic pagination for anything in AngularJS with ui-router support. Creates pagination links for SEO. Pass template-url to dir-pagination-controls directive and current-page to dir-paginate after loading data.",
   "main": ["dirPagination.js", "dirPagination.tpl.html"],
   "moduleType": [
     "globals"

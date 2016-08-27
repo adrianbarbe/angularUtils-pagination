@@ -279,6 +279,13 @@
 
             var paginationRange = Math.max(scope.maxSize, 5);
             scope.pages = [];
+             var splitrouter = scope.$root.$state.$current.name.split('.');
+            var laststate = splitrouter[splitrouter.length-1];
+            var state = scope.$root.$state.$current.name;
+            if (laststate != 'pagination'){
+                state = scope.$root.$state.$current.name+".pagination"; // Set pagination substate for ui-router. You may create pagination substate
+            }
+            scope.uiState = state;
             scope.pagination = {
                 last: 1,
                 current: 1
